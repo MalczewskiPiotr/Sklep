@@ -8,7 +8,6 @@ import javax.swing.JPanel;
 
 public class Okno {
 
-
     public static void main(String[] args) {
 
         JFrame window = new JFrame("Okno");
