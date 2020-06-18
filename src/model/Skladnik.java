@@ -5,17 +5,17 @@ public class Skladnik {
 	private String nazwa;
 
 	private char cena;
-
+	
 	private int kodKreskowy;
 
-	public Skladnik(String nazwa, char cena, char kodKreskowy) {
+	public Skladnik(String nazwa, char cena, int kodKreskowy) {
 		this.nazwa = nazwa;
 		this.cena = cena;
 		this.kodKreskowy = kodKreskowy;
 	}
 
-	public char getNazwa() {
-		return cena;
+	public String getNazwa() {
+		return nazwa;
 	}
 
 	public char getCena() {
@@ -23,7 +23,8 @@ public class Skladnik {
 		
 	}
 
-	public void getKodKreskowy() {
+	public int getKodKreskowy() {
+		return kodKreskowy;
 	
 	}
 
