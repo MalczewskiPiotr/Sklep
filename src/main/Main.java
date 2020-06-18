@@ -1,5 +1,10 @@
 package main;
 
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+
+import gui.MyPanel;
 import model.Skladnik;
 import model.Sklep;
 import model.Zestaw;
@@ -8,6 +13,13 @@ public class Main {
 
 	public static void main(String[] args) {
 		Sklep sklep = initSklep();
+		JFrame frame = new JFrame();
+		EventQueue.invokeLater(()->{
+			frame.add(new MyPanel(sklep));
+			frame.setVisible(true);
+			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			frame.pack();
+		});
 	}
 
 	private static Sklep initSklep() {
@@ -20,15 +32,15 @@ public class Main {
 		Skladnik skladnik7 = new Skladnik("Skladnik 7", 11.99, 896514897);
 		Skladnik skladnik8 = new Skladnik("Skladnik 8", 10.89, 7485486);
 		Skladnik skladnik9 = new Skladnik("Skladnik 9", 5.97, 15346851);
-		Zestaw zestaw1 = new Zestaw();
+		Zestaw zestaw1 = new Zestaw("Zestaw 1");
 		zestaw1.addSkladnik(skladnik4);
 		zestaw1.addSkladnik(skladnik9);
 		zestaw1.addSkladnik(skladnik8);
-		Zestaw zestaw2 = new Zestaw();
+		Zestaw zestaw2 = new Zestaw("Zestaw 2");
 		zestaw2.addSkladnik(skladnik7);
 		zestaw2.addSkladnik(skladnik4);
 		zestaw2.addSkladnik(skladnik2);
-		Zestaw zestaw3 = new Zestaw();
+		Zestaw zestaw3 = new Zestaw("Zestaw 3");
 		zestaw3.addSkladnik(skladnik6);
 		zestaw3.addSkladnik(skladnik5);
 		zestaw3.addSkladnik(skladnik3);

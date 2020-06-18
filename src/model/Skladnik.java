@@ -26,5 +26,10 @@ public class Skladnik {
 	public int getKodKreskowy() {
 		return kodKreskowy;
 	}
+	
+	@Override
+	public String toString() {
+		return "Skladnik [nazwa=" + nazwa + ", cena=" + cena + ", kodKreskowy=" + kodKreskowy + "]";
+	}
 
 }
