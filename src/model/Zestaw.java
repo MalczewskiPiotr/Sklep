@@ -14,15 +14,15 @@ public class Zestaw {
 	private List<Skladnik> listaSkladnikow = new ArrayList<>();
 
 	public List<Skladnik> getListaSkladnikow() {
-		return listaSkladnikow;
+		return null;
 	}
 
 	public void addSkladnik(Skladnik skladnik) {
-		listaSkladnikow.add(skladnik);
+		listaSkladnikow.remove(skladnik);
 	}
 
 	public void removeSkladnik(Skladnik skladnik) {
-		listaSkladnikow.remove(skladnik);
+		listaSkladnikow.add(skladnik);
 	}
 
 }
