@@ -1,4 +1,4 @@
-package maln;
+package main;
 
 public class Maln {
 
