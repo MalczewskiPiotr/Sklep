@@ -39,5 +39,4 @@ public class Main {
 		sklep.addZestaw(zestaw3);
 		return sklep;
 	}
-
 }
