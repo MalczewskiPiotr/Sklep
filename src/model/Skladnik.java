@@ -20,6 +20,7 @@ public class Skladnik {
 
 	public double getCena() {
 		return cena;
+		
 	}
 
 	public int getKodKreskowy() {

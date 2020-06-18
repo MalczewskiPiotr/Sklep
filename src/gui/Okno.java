@@ -33,13 +33,10 @@ public class Okno {
 
 
         panel.add(button);
-
         window.setSize(400, 400);
         window.add(panel);
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setVisible(true);
-
-
     }
 
 }
