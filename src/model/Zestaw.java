@@ -4,6 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Zestaw {
+	
+	private String nazwa;
+
+	public String getNazwa() {
+		return nazwa;
+	}
 
 	private List<Skladnik> listaSkladnikow = new ArrayList<>();
 
